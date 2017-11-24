@@ -1,63 +1,165 @@
----
----
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
-	<meta name="keywords" content="{{ site.keywords }}">
-	<meta name="description" content="{{ site.description }}">
+  <title>BioExcel</title>
+	<meta name="keywords" content="foo, bar">
+	<meta name="description" content="The Leader in Cell Biology">
   <link rel="stylesheet" href="combo.css">
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
-	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+  
+	
 </head>
 <body>
   <div id="main">
 
     <nav><ul>
-      {% for node in site.posts reversed %}
-        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
-      {% endfor %}
+      
+        
+        <li class="p-intro"><a href="#intro">home</a></li>
+      
+        
+        <li class="p-second"><a href="#second">Meet BioExcel</a></li>
+      
+        
+        <li class="p-whatsnext"><a href="#whatsnext">Big Data</a></li>
+      
+        
+        <li class="p-ngs"><a href="#ngs">NGS</a></li>
+      
+        
+        <li class="p-vbs"><a href="#vbs">VBS</a></li>
+      
+        
+        <li class="p-dates"><a href="#dates">Gene Names</a></li>
+      
     </ul></nav>
 
 
-    {% for page in site.posts reversed %}
-      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
-      <div id="{{id}}" class="section p-{{id}}">
-        {% if page.icon %}
-        <div class="subtlecircle sectiondivider imaged">
-          <img src="{{page.icon}}" alt="section icon" />
-          <h5 class="icon-title">{{ page.title }}</h5>
+    
+      
+      <div id="intro" class="section p-intro">
+        
+        <div class="container center">
+          <p><img src="img/bioexcel-large.png" alt="" /></p>
+
+<p>The leader in <em>Cell Biology</em></p>
+
         </div>
-        {% elsif page.fa-icon %}
+      </div>
+    
+      
+      <div id="second" class="section p-second">
+        
         <div class="subtlecircle sectiondivider faicon">
           <span class="fa-stack">
             <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
+            <i class="fa fa-table fa-stack-1x"></i>
           </span>
-          <h5 class="icon-title">{{ page.title }}</h5>
+          <h5 class="icon-title">Meet BioExcel</h5>
         </div>
-        {% endif %}
-        <div class="container {{ page.style }}">
-          {{ page.content }}
+        
+        <div class="container ">
+          <h4>Unleash the Power of Tables</h4>
+<p>We all love spreadsheets and can’t get enough of them. From doing our personal finances over <a href="http://mashable.com/2014/08/27/microsoft-excel-games/#fuIwZM00xuqL">programming video games</a> to data analysis. <a href="https://www.bloomberg.com/news/articles/2013-04-18/faq-reinhart-rogoff-and-the-excel-error-that-changed-history">Economists have long known about the inherent power of <em>Microsoft Excel</em></a>. But bioinformatics has been waiting for it’s great spreadsheet breakthrough.</p>
+
+<p>While there are <a href="http://bioperl.org/">BioPerl</a>, <a href="http://biopython.org/">Biopython</a>, <a href="http://bioruby.org/">BioRuby</a> et al., there just was no <em>Bio*</em> package for our favorite spreadsheet tool, <em>Excel</em>.</p>
+
+<p>This changes now.</p>
+
         </div>
       </div>
-    {% endfor %}
+    
+      
+      <div id="whatsnext" class="section p-whatsnext">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-vcard fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">Big Data</h5>
+        </div>
+        
+        <div class="container ">
+          <h4>Designed with Big Data in Mind</h4>
+<p>We have all done our fair share of tests for differential gene expression or functional enrichments in beloved <em>Excel</em>, after we spent hours of desperately trying to install <a href="https://www.bioconductor.org/">Bioconductor packages</a>. But working with big data on the other hand was so far limited to these pesky command line utilities. <em>BioExcel</em> changes this, and comes with support not only for <code class="highlighter-rouge">*.fasta</code>, but also <code class="highlighter-rouge">*.fastq</code> and <code class="highlighter-rouge">*.vcf</code> files.</p>
+
+        </div>
+      </div>
+    
+      
+      <div id="ngs" class="section p-ngs">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-align-center fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">NGS</h5>
+        </div>
+        
+        <div class="container ">
+          <h4>Analyse Next-Generation-Sequencing Data</h4>
+<p>Preprocessing your Next Generation Sequencing reads was possible in <em>Excel</em> before, but it was a pain. With <em>BioExcel</em> you can now adapter-trim, clip and deduplicate your sequences, right in <em>Excel</em>. And of course, <em>Short Read Mapping</em> and <em>de novo assembly</em> are part of the package too. Keep your eyes open for the next mapping and assembly benchmarks!</p>
+
+        </div>
+      </div>
+    
+      
+      <div id="vbs" class="section p-vbs">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-vcard fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">VBS</h5>
+        </div>
+        
+        <div class="container ">
+          <h4>Unleash Visual Basic</h4>
+<p><code class="highlighter-rouge">Visual Basic for Applications</code> is one of the worlds most popular programming languages. And you can use it right away from <em>Excel</em>. With <em>BioExcel</em> it is easy to adapt and extend the existing solutions. In the span of a few minutes you can write your own functions. And give them back to the community, thanks to our integration with <a href="https://sourceforge.net/lolnope">SourceForge</a>!</p>
+
+        </div>
+      </div>
+    
+      
+      <div id="dates" class="section p-dates">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-calendar-check-o fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">Gene Names</h5>
+        </div>
+        
+        <div class="container ">
+          <h4>Dates, meet Genes</h4>
+<p>You have probably heard about the annoying short-coming of <em>Excel</em> when it comes to <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7">gene names that are misinterpreted as dates</a>. Most annoying: the conversation is a one-way street.</p>
+
+<p>With <em>BioExcel</em> this is finally no longer true. From now on <code class="highlighter-rouge">MARCH1</code> will not only be converted to <code class="highlighter-rouge">1-Mar</code>, but you can also just enter your favorite gene names as dates. <em>BioExcel</em> automatically recognizes that <code class="highlighter-rouge">2017-3-1</code> was meant to be <code class="highlighter-rouge">MARCH1</code> and will give you the correct gene name.</p>
+
+        </div>
+      </div>
+    
 
 
     <div id="footer" class="section text-white">
       <div class="container">
-        {% capture foottext %} {% include footer.md %} {% endcapture %}
-        {{ foottext | markdownify }}
+        
+        <p>Logo by <a href="https://ura.design">ura.design</a>
+—</p>
+
+
       </div>
     </div>
   </div>
 
-{% include analytics.html %}
+
 </body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="site.js"></script>
