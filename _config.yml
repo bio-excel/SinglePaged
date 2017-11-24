@@ -14,9 +14,9 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "SinglePaged - Title: Edit me in _config.yml!"
+title:       "BioExcel"
 keywords:    "SinglePaged, jekyll, template, github, blog, single page"
-description: "A single-page template for Jekyll based blogs (like what you'd use on github pages!)"
+description: "The Leader in Cell Biology"
 source_link: "https://github.com/t413/SinglePaged"
 favicon:     #put a path like: "img/favicon.ico"
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
@@ -35,4 +35,3 @@ colors:
 
 kramdown:
   auto_ids:  false
-
