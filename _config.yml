@@ -15,7 +15,7 @@ markdown: kramdown
 
 ### content configuration ###
 title:       "BioExcel"
-keywords:    "SinglePaged, jekyll, template, github, blog, single page"
+keywords:    "foo, bar"
 description: "The Leader in Cell Biology"
 source_link: "https://github.com/t413/SinglePaged"
 favicon:     #put a path like: "img/favicon.ico"
