@@ -520,6 +520,10 @@ html { box-sizing: border-box; }
   #dates .sectiondivider { color: #207245; }
 
 
+	nav .p-download { border-color: #f8f8f8; }
+	#download { background-color: #f8f8f8 !important; color: #207245; }
+	#download a { color: #207245; }
+	#download .sectiondivider { color: #207245; }
 
 
 
