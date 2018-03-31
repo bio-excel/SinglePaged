@@ -510,55 +510,55 @@ html { box-sizing: border-box; }
 
 /* ----- per-post colors! ----- */
 
-  
-  
-  
-  
+
+
+
+
   nav .p-dates { border-color: #207245; }
   #dates { background-color: #207245 !important; color: #f8f8f8; }
   #dates a { color: #f8f8f8; }
   #dates .sectiondivider { color: #207245; }
 
-  
-  
-  
-  
-  nav .p-vbs { border-color: #f8f8f8; }
-  #vbs { background-color: #f8f8f8 !important; color: #207245; }
-  #vbs a { color: #207245; }
-  #vbs .sectiondivider { color: #207245; }
 
-  
-  
-  
-  
+
+
+
+  nav .p-vba { border-color: #f8f8f8; }
+  #vba { background-color: #f8f8f8 !important; color: #207245; }
+  #vba a { color: #207245; }
+  #vba .sectiondivider { color: #207245; }
+
+
+
+
+
   nav .p-ngs { border-color: #207245; }
   #ngs { background-color: #207245 !important; color: #f8f8f8; }
   #ngs a { color: #f8f8f8; }
   #ngs .sectiondivider { color: #207245; }
 
-  
-  
-  
-  
+
+
+
+
   nav .p-whatsnext { border-color: #f8f8f8; }
   #whatsnext { background-color: #f8f8f8 !important; color: #207245; }
   #whatsnext a { color: #207245; }
   #whatsnext .sectiondivider { color: #207245; }
 
-  
-  
-  
-  
+
+
+
+
   nav .p-second { border-color: #207245; }
   #second { background-color: #207245 !important; color: #f8f8f8; }
   #second a { color: #f8f8f8; }
   #second .sectiondivider { color: #207245; }
 
-  
-  
-  
-  
+
+
+
+
   nav .p-intro { border-color: #f8f8f8; }
   #intro { background-color: #f8f8f8 !important; color: #207245; }
   #intro a { color: #207245; }
@@ -895,4 +895,3 @@ nav ul li:hover, nav ul li.active {
     column-count:         2;
   }
 }
-
